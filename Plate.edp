@@ -6,7 +6,7 @@ load "msh3" // for buildlayers function
 load "gmsh" // for loading gmsh meshes
 
 
-string root="Matrices/Plate/";
+string root=""; // Matrices/Plate/
 mesh3 Th = gmshload3("Plate.msh");
 
 
@@ -14,7 +14,7 @@ mesh3 Th = gmshload3("Plate.msh");
 // Define variables, functions, and macros
 //--------------------------------------------------------------------------
 
-real E = 2.38e7;
+real E = 2.38e9;
 real rhoS = 1188;
 real nu = 0.29;
 real mu = E/(2*(1+nu));
